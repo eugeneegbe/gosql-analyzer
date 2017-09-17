@@ -35,6 +35,7 @@ func init() {
 	}
 }
 
+// ClearScreen clears the screen and prepare the console for the analyzer
 func ClearScreen() {
 	value, ok := clear[runtime.GOOS] //runtime.GOOS -> linux, windows, darwin etc.
 	if ok {                          // if we defined a clear func for that platform:
@@ -50,7 +51,8 @@ func main() {
 	ClearScreen()
 
 	fmt.Println("Welcome to the Go SQL Query Analyzer (GoSQA) version 1.0")
-	fmt.Println("Developed by: Alangi Derick N (alangiderick@gmail.com)\n")
+	fmt.Println("Developed by: Alangi Derick N (alangiderick@gmail.com)")
+	fmt.Println()
 
 	for {
 		fmt.Printf("gosql-query-analyzer> ")
