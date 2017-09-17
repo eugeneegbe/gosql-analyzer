@@ -23,9 +23,3 @@ $ make
 ```shell
 $ make install
 ```
-
-
-
-# Future features
-
-* Add support for other DBMSs like Oracle, PostgreSQL etc.

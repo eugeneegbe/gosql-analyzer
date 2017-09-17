@@ -31,6 +31,21 @@ else
 
 
 
+# Analyse_Query() method
+
+This section analyzes the query and returns a bunch of metrics useful to determine how the query can be made efficient such as;
+
+* Query Analyzer Table
+* Query Response Time Index
+* Response Statistics
+* Example Query
+* Explain Query
+* Graphs
+
+For more information, check the [MySQL Enterprice Monitor](https://www.mysql.com/products/enterprise/query.html)
+
+
+
 # Future features
 
 * Add support for other DBMSs like Oracle, PostgreSQL etc.
