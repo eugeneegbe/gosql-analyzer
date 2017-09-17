@@ -28,3 +28,9 @@ $ ./sanalyzer
 ```shell
 $ make install
 ```
+
+
+
+# Design Document
+
+You can read the [design document](design_doc.md) to understand how the application works basically.
