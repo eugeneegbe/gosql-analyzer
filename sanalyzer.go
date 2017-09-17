@@ -1,5 +1,5 @@
 // Author: Alangi Derick N
-// LICENSE: MIT, all right reserved 2017
+// LICENSE: MIT, Copyright (c) 2017 Alangi Derick
 // Description: Entry point for the SQL analyzer tool
 
 package main

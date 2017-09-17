@@ -40,6 +40,7 @@ Meaning of the following letters in the pseudocode;
 * OQ = Optimized Query
 
 
+
 # Analyse_Query() method
 
 This section analyzes the query and returns a bunch of metrics useful to determine how the query can be made efficient such as;

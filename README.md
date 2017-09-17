@@ -33,7 +33,7 @@ $ make install
 
 # Design Document
 
-You can read the [design document](design_doc.md) to understand how the application works basically.
+You can read the [design document](docs/design_doc.md) to understand how the application works basically.
 
 
 
