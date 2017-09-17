@@ -1,6 +1,6 @@
-# GoSQL-Analyzer
+# Go SQL Query Analyzer
 
-Go tool for analyzing SQL Queries to improve on Database Performance in DBMSs.
+The tool for analyzing SQL Queries to improve on Database Performance in DBMSs written in Go.
 
 
 
@@ -13,7 +13,7 @@ console = Prepare_Analyzer_Console()
 
 if console is ready
 
-	Q = Get_SQL_Query()
+	start: Q = Get_SQL_Query()
 
 	if Q is valid in MySQL
 		R = Analyze_Query()
@@ -23,7 +23,7 @@ if console is ready
 		Q is invalid in MySQL
 		
 	Enter a valid query
-	goto line #14
+	goto start
 
 else
 	exit(console)
