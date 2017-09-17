@@ -1,15 +1,13 @@
 # Build the application
 
-all: clean build install
+all: clean build
 
 build:
 	@echo "+ $@"
-	@go build .
+	@go build -o sanalyzer .
+	@echo "Build complete!"
 
 clean:
 	@echo "+ $@"
-	@rm -rf sanalyze
-
-install:
-	@echo "+ $@"
-	@go install .
+	@rm -rf sanalyzer
+	@echo "Cleanup complete!"

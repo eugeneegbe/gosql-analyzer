@@ -15,10 +15,15 @@ $ git clone https://github.com/ch3nkula/gosql-analyzer.git
 2. Build the application:
 
 ```shell
-$ make
+$ make build
 ```
 
-3. Finally, install the application:
+3. Run the execute if you are in dev mode:
+```
+$ ./sanalyzer
+```
+
+3. Finally, install the application on your system:
 
 ```shell
 $ make install
