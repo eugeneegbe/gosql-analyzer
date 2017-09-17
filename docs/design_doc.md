@@ -56,6 +56,20 @@ For more information, check the [MySQL Enterprise Monitor](https://www.mysql.com
 
 
 
+# Research Links / Resources about the project
+
+To fully understand and capture the main idea about this project, you need to look at some of these links below;
+* [MySQL Enterprise Monitor](https://www.mysql.com/products/enterprise/query.html) - Resource
+* [A Tool for Analyzing and Tuning Relational Database Applications: SQL Query Analyzer and Schema EnHancer (SQUASH)](https://www.researchgate.net/publication/221398010_A_Tool_for_Analyzing_and_Tuning_Relational_Database_Applications_SQL_Query_Analyzer_and_Schema_EnHancer_SQUASH) - Research Paper.
+
+
+
+# Other SQL Analyzer Tools (both online and offline)
+* [Data Pine SQL Analyzer tool for MySQL](https://www.datapine.com/sql-query-analyzer).
+* [Solar Wind SQL Query Analyzer](http://www.solarwinds.com/solutions/sql-query-analyzer).
+
+
+
 # Future features
 
 * Add support for other DBMSs like Oracle, PostgreSQL etc.
