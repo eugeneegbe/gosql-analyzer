@@ -16,8 +16,13 @@ if console is ready
 	start: Q = Get_SQL_Query()
 
 	if Q is valid in MySQL
-		R = Analyze_Query()
-		return R
+		M = Analyze_Query()
+		
+		if Q can be optimized
+			OQ = Optimize_Query()
+			return OQ
+
+		return M, Q
 
 	else 
 		Q is invalid in MySQL
@@ -29,6 +34,10 @@ else
 	exit(console)
 ```
 
+Meaning of the following letters in the pseudocode;
+* M = Metrics of the Q (query)
+* Q = Query
+* OQ = Optimized Query
 
 
 # Analyse_Query() method
