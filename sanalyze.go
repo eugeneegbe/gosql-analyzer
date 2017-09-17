@@ -10,7 +10,6 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
-	"time"
 )
 
 var clear map[string]func() // create a map for storing clear functions
@@ -25,6 +24,11 @@ func init() {
 	}
 	clear["windows"] = func() {
 		cmd := exec.Command("cls") // Windows systems
+		cmd.Stdout = os.Stdout
+		cmd.Run()
+	}
+	clear["darwin"] = func() {
+		cmd := exec.Command("clear") // Mac OS systems
 		cmd.Stdout = os.Stdout
 		cmd.Run()
 	}
@@ -44,7 +48,7 @@ func main() {
 	// Clear screen and prepare the analyzer console
 	ClearScreen()
 
-	fmt.Printfln("Welcome to the Go SQL Query Analyzer (GoSQA) version 1.0")
+	fmt.Println("Welcome to the Go SQL Query Analyzer (GoSQA) version 1.0")
 
 	for {
 		fmt.Printf("gosql-query-analyzer> ")
