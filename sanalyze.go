@@ -10,6 +10,7 @@ import (
 	"os"
 	"os/exec"
 	"runtime"
+	"strings"
 )
 
 var clear map[string]func() // create a map for storing clear functions
@@ -49,6 +50,7 @@ func main() {
 	ClearScreen()
 
 	fmt.Println("Welcome to the Go SQL Query Analyzer (GoSQA) version 1.0")
+	fmt.Println("Developed by: Alangi Derick N (alangiderick@gmail.com)\n")
 
 	for {
 		fmt.Printf("gosql-query-analyzer> ")
@@ -56,6 +58,11 @@ func main() {
 		reader := bufio.NewReader(os.Stdin)
 
 		query, _ := reader.ReadString('\n')
+
+		if strings.TrimRight(query, "\n") == "quit" {
+			//fmt.Println("Exiting Go SQL Query Analyzer...")
+			fmt.Println("Press Ctrl + C to exit the console.")
+		}
 		fmt.Println("query: ", query)
 		// Enter Ctrl + C to quit.
 	}
