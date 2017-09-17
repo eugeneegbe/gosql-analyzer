@@ -2,11 +2,17 @@
 CC=go
 BUILDTAGS=-o
 DIR=.
+EXECUTABLE=sanalyzer
+DEP=github.com/fatih/color
 
 build:
 	@echo "+ $@"
-	@$(CC) build $(BUILDTAGS) sanalyzer $(DIR)
-	@echo "Build complete!"
+	@echo "+ Downloading dependencies. Please wait..."
+	@go get -u $(DEP)
+	@echo "+ Building the project..."
+	@$(CC) build $(BUILDTAGS) $(EXECUTABLE) $(DIR)
+	@echo "+ Build complete!\n"
+	@echo "+ Run by typing: ./"$(EXECUTABLE)
 
 clean:
 	@echo "+ $@"
