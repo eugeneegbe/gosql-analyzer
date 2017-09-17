@@ -34,3 +34,9 @@ $ make install
 # Design Document
 
 You can read the [design document](design_doc.md) to understand how the application works basically.
+
+
+
+# Credits
+
+* [Alangi Derick](https://github.com/ch3nkula) - Author 
