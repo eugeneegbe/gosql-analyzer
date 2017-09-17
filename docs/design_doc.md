@@ -67,7 +67,7 @@ To fully understand and capture the main idea about this project, you need to lo
 # Other SQL Analyzer Tools (both online and offline)
 * [Data Pine SQL Analyzer tool for MySQL](https://www.datapine.com/sql-query-analyzer).
 * [Solar Wind SQL Query Analyzer](http://www.solarwinds.com/solutions/sql-query-analyzer).
-
+* [EverSQL - Free Plan](https://www.eversql.com/sql-query-optimizer/?type=free).
 
 
 # Future features
