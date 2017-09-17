@@ -7,8 +7,9 @@ package main
 import (
 	"bufio"
 	"fmt"
+	color "github.com/fatih/color"
 	"os"
-	"os/exec"
+	exec "os/exec"
 	"runtime"
 	"strings"
 )
@@ -50,12 +51,16 @@ func main() {
 	// Clear screen and prepare the analyzer console
 	ClearScreen()
 
-	fmt.Println("Welcome to the Go SQL Query Analyzer (GoSQA) version 1.0")
-	fmt.Println("Developed by: Alangi Derick N (alangiderick@gmail.com)")
+	// Create a new color object
+	c := color.New(color.FgGreen)
+	bold := color.New(color.FgGreen, color.Bold)
+
+	bold.Println("Welcome to the Go SQL Query Analyzer (GoSQA) version 1.0")
+	bold.Println("Developed by: Alangi Derick N (alangiderick@gmail.com)")
 	fmt.Println()
 
 	for {
-		fmt.Printf("gosql-query-analyzer> ")
+		c.Printf("gosql-query-analyzer> ")
 
 		reader := bufio.NewReader(os.Stdin)
 
@@ -63,9 +68,9 @@ func main() {
 
 		if strings.TrimRight(query, "\n") == "quit" {
 			//fmt.Println("Exiting Go SQL Query Analyzer...")
-			fmt.Println("Press Ctrl + C to exit the console.")
+			c.Println("Press Ctrl + C to exit the console.")
 		}
-		fmt.Println("query: ", query)
+		c.Println("query: ", query)
 		// Enter Ctrl + C to quit.
 	}
 
