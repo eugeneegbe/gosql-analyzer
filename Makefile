@@ -1,10 +1,12 @@
-# Build the application
+# Build the application and install any dependencies if necessary
+CC=go
+BUILDTAGS=-o
 
-all: clean build
+all: build clean
 
 build:
 	@echo "+ $@"
-	@go build -o sanalyzer .
+	@$(CC) build $(BUILDTAGS) sanalyzer .
 	@echo "Build complete!"
 
 clean:
