@@ -3,7 +3,7 @@
 
 # Go SQL Query Analyzer
 
-The tool for analyzing SQL Queries to improve on Database Performance in DBMSs written in Go. This tool will analyze a query again a given DB (default: MySQL or your local DBMS) and returns the query metrics and an optimized version of your query after analyzing it. If your query is already optimal, then the tool will return the metrics of the query. Hence, optimal queries will be used to improve on performance of your applications in production.
+The tool for analyzing SQL Queries to improve on Database Performance in DBMSs written in Go. This tool will analyze a query against a given DB (default: MySQL or your local DBMS) and returns the query metrics and an optimized version of your query after analyzing it. If your query is already optimal, then the tool will return the metrics of the query. Hence, optimal queries will be used to improve on performance of your applications in production.
 
 
 
