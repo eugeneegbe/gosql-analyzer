@@ -61,6 +61,8 @@ For more information, check the [MySQL Enterprise Monitor](https://www.mysql.com
 To fully understand and capture the main idea about this project, you need to look at some of these links below;
 * [MySQL Enterprise Monitor](https://www.mysql.com/products/enterprise/query.html) - Resource
 * [A Tool for Analyzing and Tuning Relational Database Applications: SQL Query Analyzer and Schema EnHancer (SQUASH)](https://www.researchgate.net/publication/221398010_A_Tool_for_Analyzing_and_Tuning_Relational_Database_Applications_SQL_Query_Analyzer_and_Schema_EnHancer_SQUASH) - Research Paper.
+* [Optimizing Queries with EXPLAIN](https://dev.mysql.com/doc/refman/5.7/en/using-explain.html).
+* [How to Optimize MySQL Queries with Query Profiler](https://www.youtube.com/watch?v=WixrenRiTTE).
 
 
 
